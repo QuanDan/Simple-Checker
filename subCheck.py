@@ -27,6 +27,7 @@ def main():
 	user_agent = ("PySubChecker 0.1")
 	r = praw.Reddit(user_agent = user_agent)
 	sub = get_subr()
+
 	searchWords = []
 	get_list(searchWords)
 	print (searchWords)
