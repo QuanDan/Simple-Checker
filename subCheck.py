@@ -3,6 +3,8 @@ import praw
 import smtplib
 from pymsgbox import *
 
+user_agent = ("PySubChecker 0.1")
+
 def get_subr():
   sub = input("Please enter subreddit to check for:\n")
   return sub;
@@ -24,7 +26,6 @@ def sendMessage(message):
   return
 
 def main():
-  user_agent = ("PySubChecker 0.1")
   r = praw.Reddit(user_agent = user_agent)
   sub = get_subr()
 
